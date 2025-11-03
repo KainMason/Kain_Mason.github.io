@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kain Mason — CS 499 ePortfolio (Module One)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.5; }
+    header, section { max-width: 900px; margin: 0 auto 32px; }
+    h1 { margin-bottom: 8px; }
+    h2 { margin-top: 28px; }
+    code, pre { background: #f4f6f8; padding: 8px; border-radius: 6px; display: block; overflow: auto; }
+    .box { border: 1px solid #e3e6e9; padding: 16px; border-radius: 8px; }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 800px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    img { max-width: 100%; border: 1px solid #e3e6e9; border-radius: 6px; }
+    .muted { color: #666; font-size: 0.95rem; }
+    ul { margin-top: 0.4rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { max-width: 900px; margin: 40px auto 20px; color: #666; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CS 499 ePortfolio — Module One Plan</h1>
+    <div class="muted">Student: <strong>Kain Mason</strong></div>
+    <p><strong>Public URL:</strong> <a href="https://kainmason.github.io">https://kainmason.github.io</a></p>
+  </header>
+
+  <!-- Self-Introduction (brief, human, aligned to prompt) -->
+  <section class="box">
+    <h2>I. Self-Introduction</h2>
+    <p>I’ve been in SNHU’s Computer Science program for a few years. The three most important skills I’ve built are: (1) full-stack development with the MEAN/Python stack, (2) algorithmic thinking and performance trade-offs, and (3) secure coding and data handling. My enhancements show software design, algorithm optimization, and database/security practices that align to the five CS-499 outcomes and my goal of a software/data engineering role.</p>
+  </section>
+
+  <!-- ePortfolio setup with screenshot -->
+  <section class="box">
+    <h2>II. ePortfolio Set Up</h2>
+    <p>My ePortfolio is hosted on GitHub Pages at the URL above. Below is a screenshot that clearly shows the URL.</p>
+    <!-- Replace image source with your actual screenshot path or file name -->
+    <img src="assets/home-screenshot.png" alt="Screenshot of Kain Mason GitHub Pages ePortfolio homepage showing URL">
+  </section>
+
+  <!-- Three categories with artifacts from approved courses -->
+  <section>
+    <h2>III. Enhancement Plan (Three Categories & Artifacts)</h2>
+
+    <div class="grid">
+      <!-- Category One -->
+      <article class="box">
+        <h3>Category One: Software Engineering & Design</h3>
+        <p><strong>Artifact (Approved Course):</strong> CS 340 — <em>Grazioso Salvare Rescue Dashboard</em></p>
+        <p>
+          Repo: <a href="https://github.com/KainMason/CS-340-8-2-Journal-Portfolio-Item" target="_blank">CS-340-8-2-Journal-Portfolio-Item</a>
+        </p>
+        <p><strong>Plan:</strong> Add role-based authentication, expose simple REST endpoints, and improve error handling + form validation.</p>
+        <p><strong>Pseudocode:</strong></p>
+        <pre><code>// GET /api/animals?filter={type}
+q = filter ? { rescue_type: type } : {}
+results = shelter.read(q)
+return 200 OK with JSON(results)</code></pre>
+        <p><strong>Skills/Outcomes:</strong> API design, modular architecture, secure UX. Aligns with Outcomes 2, 4, 5.</p>
+      </article>
+
+      <!-- Category Two -->
+      <article class="box">
+        <h3>Category Two: Algorithms & Data Structures</h3>
+        <p><strong>Artifact (Approved Course):</strong> CS 260 — <em>Algorithms & Data Structures Project</em></p>
+        <p>
+          Repo: <a href="#" target="_blank" id="cs260">TODO — add your CS 260 repo link</a>
+        </p>
+        <p><strong>Plan:</strong> Add a benchmark harness, compare implementations (e.g., sort/graph), and document Big-O trade-offs.</p>
+        <p><strong>Pseudocode:</strong></p>
+        <pre><code>for algo in ALGOS:
+  for n in SIZES:
+    arr = generate_input(n)
+    t0 = now()
+    algo(arr)
+    t1 = now()
+    record(algo.name, n, t1 - t0)</code></pre>
+        <p><strong>Skills/Outcomes:</strong> Algorithm design & evaluation, optimization. Aligns with Outcomes 3, 4.</p>
+      </article>
+
+      <!-- Category Three -->
+      <article class="box">
+        <h3>Category Three: Databases</h3>
+        <p><strong>Artifact (Approved Course):</strong> CS 250 — <em>SNHU Travel — SDLC Portfolio</em></p>
+        <p>
+          Repo: <a href="https://github.com/KainMason/CS250-Portfolio-m08" target="_blank">CS250-Portfolio-m08</a>
+        </p>
+        <p><strong>Plan:</strong> Add simple auth/session flow, integrate a read-only flight data API, and validate inputs before queries.</p>
+        <p><strong>Pseudocode:</strong></p>
+        <pre><code>if destination && dates:
+  data = flightsAPI.search(destination, dates)
+  if data.ok: render(data.results)
+  else: show("No flights found")</code></pre>
+        <p><strong>Skills/Outcomes:</strong> Data handling, secure inputs, practical integration. Aligns with Outcomes 2, 4, 5.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Outcome coverage (short and clear) -->
+  <section class="box">
+    <h2>IV. Outcome Coverage (Summary)</h2>
+    <ul>
+      <li><strong>Outcome 1 — Collaboration:</strong> Agile process & stakeholder feedback (CS 250/CS 340).</li>
+      <li><strong>Outcome 2 — Professional Communication:</strong> READMEs, diagrams, and code comments across artifacts.</li>
+      <li><strong>Outcome 3 — Design & Evaluate Solutions:</strong> Algorithm benchmarks and trade-offs (CS 260).</li>
+      <li><strong>Outcome 4 — Techniques, Skills, Tools:</strong> Dash/Plotly, MongoDB, REST, testing (CS 340/CS 250).</li>
+      <li><strong>Outcome 5 — Security Mindset:</strong> Auth, validation, basic privacy controls (CS 340/CS 250).</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> Kain Mason — CS 499 ePortfolio</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
